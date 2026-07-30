@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elegant Login</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#6dd5fa,#2980b9);
+    overflow:hidden;
+}
+/* Login Card */
+.login-box{
+    width:360px;
+    padding:40px;
+    border-radius:18px;
+    background:rgba(255,255,255,0.18);
+    backdrop-filter:blur(12px);
+    border:1px solid rgba(255,255,255,0.25);
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+    color:white;
+}
+h2{
+    text-align:center;
+    margin-bottom:30px;
+    letter-spacing:1px;
+}
+.input-group{
+    margin-bottom:20px;
+}
+input{
+    width:100%;
+    padding:14px;
+    border:none;
+    outline:none;
+    border-radius:10px;
+    background:rgba(255,255,255,.2);
+    color:white;
+    font-size:15px;
+}
+input::placeholder{
+    color:#f1f1f1;
+}
+/* Password */
+
+.password-box{
+
+    position:relative;
+}
+
+.heart{
+
+    position:absolute;
+    right:14px;
+    top:50%;
+    transform:translateY(-50%);
+
+    cursor:pointer;
+    font-size:22px;
+
+    transition:.3s;
+}
+
+.heart:hover{
+
+    transform:translateY(-50%) scale(1.2);
+}
+
+/* Message */
+
+.message{
+
+    margin-top:10px;
+
+    font-size:14px;
+
+    color:#fff8dc;
+
+    display:none;
+
+    animation:fade .4s;
+}
+
+@keyframes fade{
+
+    from{
+        opacity:0;
+        transform:translateY(-8px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* Button */
+
+button{
+
+    width:100%;
+    padding:14px;
+
+    margin-top:25px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:white;
+
+    color:#1565c0;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+button:hover{
+
+    background:#1565c0;
+
+    color:white;
+
+    transform:translateY(-2px);
+}
+/* Mobile */
+@media(max-width:420px){
+.login-box{
+width:90%;
+padding:30px;
+}
+}
+</style>
+</head>
+<body>
+<div class="login-box">
+<h2>Welcome Back</h2>
+<div class="input-group">
+<input type="text" placeholder="Username">
+</div>
+<div class="input-group password-box">
+<input type="password" placeholder="Password">
+<span class="heart" id="heart">❤️</span>
+<div class="message" id="msg">
+It must contain 8 letters.
+</div>
+</div>
+<button>Login</button>
+</div>
+<script>
+const heart=document.getElementById("heart");
+const msg=document.getElementById("msg");
+heart.onclick=function(){
+    if(msg.style.display==="block"){
+        msg.style.display="none";
+    }
+    else{
+        msg.style.display="block";
+    }
+}
+</script>
+</body>
+</html>

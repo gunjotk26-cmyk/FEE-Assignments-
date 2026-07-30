@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ToDo Pro</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav>
+
+        <div class="logo">
+            <i class="fa-solid fa-list-check"></i> ToDoPro
+        </div>
+
+        <ul>
+
+            <li><a href="#">Home</a></li>
+
+            <li><a href="#todo">Tasks</a></li>
+
+            <li><a href="#about">About</a></li>
+
+        </ul>
+
+    </nav>
+
+    <!-- Hero -->
+
+    <section class="hero">
+
+        <h1>Stay Organized. Stay Productive.</h1>
+
+        <p>Manage your daily tasks beautifully and efficiently.</p>
+
+        <a href="#todo">
+
+            <button class="hero-btn">
+
+                Get Started
+
+            </button>
+
+        </a>
+
+    </section>
+
+    <!-- ToDo Section -->
+
+    <section id="todo">
+
+        <div class="todo-box">
+
+            <h2>My Tasks</h2>
+
+            <!-- Search -->
+
+
+            <!-- Input -->
+
+            <div class="input-area">
+
+                <input
+                    type="text"
+                    id="taskInput"
+                    placeholder="Enter a new task">
+
+                <button id="addBtn">
+
+                    <i class="fa-solid fa-plus"></i>
+
+                </button>
+
+            </div>
+
+            <!-- Progress -->
+
+            <div class="progress-container">
+
+                <div id="progressBar"></div>
+
+            </div>
+
+            <p id="progressText">
+
+                0% Completed
+
+            </p>
+
+            <!-- Counter -->
+
+            <div class="counter">
+
+                <span>Total Tasks:
+                    <b id="totalCount">0</b>
+                </span>
+
+                <span>Completed:
+                    <b id="completedCount">0</b>
+                </span>
+
+            </div>
+
+            <!-- Task List -->
+
+            <ul id="taskList">
+
+            </ul>
+
+        </div>
+
+    </section>
+
+    <!-- About -->
+
+    <section id="about">
+
+        <h2>About ToDo Pro</h2>
+
+        <p>
+
+            ToDo Pro is a simple and modern task manager built using
+            HTML, CSS and JavaScript.
+
+            Your tasks are automatically saved using Local Storage,
+            so they remain available even after refreshing the page.
+
+        </p>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        © 2026 ToDoPro | Built using HTML, CSS & JavaScript
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ChatGPT Meme</title>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    background:#222;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.meme{
+    position:relative;
+    width:650px;
+    border:8px solid white;
+    overflow:hidden;
+    box-shadow:0 0 20px rgba(255,255,255,0.3);
+}
+.meme img{
+    width:100%;
+    display:block;
+}
+.top,
+.bottom{
+    position:absolute;
+    width:100%;
+    text-align:center;
+    color:white;
+    font-size:38px;
+    font-weight:bold;
+    text-transform:uppercase;
+    text-shadow:
+        3px 3px 0 black,
+        -3px -3px 0 black,
+        3px -3px 0 black,
+        -3px 3px 0 black;
+    padding:10px;
+}
+.top{
+    top:10px;
+}
+.bottom{
+    bottom:10px;
+}
+</style>
+</head>
+<body>
+<div class="meme">
+    <!-- Replace with your own downloaded meme image if needed -->
+    <img src="https://i.imgflip.com/30b1gx.jpg" alt="Meme">
+    <div class="top">
+        Teacher: "Do it yourself"
+    </div>
+    <div class="bottom">
+        Me: *Opens ChatGPT* 😂
+    </div>
+</div>
+</body>
+</html>
